@@ -67,7 +67,7 @@ def write (self, name, path, txt):
 
 **1、完整代码**
 
-```
+```python
 #！/usr/bin/env Python3
 # -*- coding:UTF-8 -*-
 
