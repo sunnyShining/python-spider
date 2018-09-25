@@ -1,4 +1,5 @@
 ---
+author: sunny
 title: urllib、pyquery下载笔趣阁小说
 date: 2018-09-25 14:28:04
 categories: 编程
@@ -8,6 +9,8 @@ tags: python
 ## 一、小说章节路径获取
 
 **1、爬取的小说名为摸金天师，小说首页为http://www.biquge.com.tw/18_18128/，通过urllib.request.urlopen获取页面HTTPResposne类型的对象，在通过read()方法获取页面内容**
+
+<!-- more -->
 
 ```python
 request = urllib.request.Request(url, headers=headers)
@@ -61,7 +64,7 @@ def write (self, name, path, txt):
             f.write('\n\n')
 ```
 
-二、完整代码
+## 二、完整代码
 
 ```python
 #!/usr/bin/env python3
@@ -148,10 +151,10 @@ if __name__ == '__main__':
     print('下载完成')
 ```
 
-三、效果
+## 三、效果
 
 ![效果](https://upload-images.jianshu.io/upload_images/4605151-1e2236300bcb3142.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-四、源码
+## 四、源码
 
 源码[链接](https://github.com/sunnyShining/python-spider/tree/master/mojintianshi)
